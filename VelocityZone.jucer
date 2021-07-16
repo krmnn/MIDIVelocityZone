@@ -7,12 +7,9 @@
   <MAINGROUP id="XuXsBl" name="MIDIVelocityZone">
     <GROUP id="{CE611F31-2F49-AA3F-2942-2F0CABD27C3C}" name="Source">
       <FILE id="vvyVoI" name="PluginProcessor.cpp" compile="1" resource="0"
-            file="Source/PluginProcessor.cpp"/>
+            file="PluginProcessor.cpp"/>
       <FILE id="IbP7QJ" name="PluginProcessor.h" compile="0" resource="0"
-            file="Source/PluginProcessor.h"/>
-      <FILE id="CknVHJ" name="PluginEditor.cpp" compile="1" resource="0"
-            file="Source/PluginEditor.cpp"/>
-      <FILE id="XepXWE" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+            file="PluginProcessor.h"/>
     </GROUP>
   </MAINGROUP>
   <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
