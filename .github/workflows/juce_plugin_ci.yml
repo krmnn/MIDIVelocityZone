@@ -24,6 +24,9 @@ jobs:
     name: clang-tidy
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
       - name: clang-tidy check
         uses: smay1613/clang-tidy-action@master
     env:
