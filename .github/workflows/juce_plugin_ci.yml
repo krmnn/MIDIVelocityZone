@@ -7,11 +7,11 @@ on:
   push:
     branches:
       - main
-      - develop
     tags:
       - v0.*.*
   pull_request:
-
+    branches:
+      - develop
 
 env:
   CMAKE_VERSION: 3.16.2
