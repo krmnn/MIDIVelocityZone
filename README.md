@@ -1,11 +1,12 @@
 # MIDIVelocityZone Plugin
 
 This Plugin listens to incoming MIDI messages for a specific note, and triggers a different note if the velocity is above a configurable threshold.
+
 It was built using JUCE, so it can be compiled to AU/VST for Mac/Win/Linux.
 
 ![screenshot](screenshot.png)
 
-*Motivation:* The cheap Roland TD1 KV drumsets fake ride bell hits when hitting the ride tip with a certain velocity. This information is not passed via MIDI OUT and this plugin will re-create the behaviour before the messages enter your drum VST. But you can use it in general to add different sounds for accents to your MIDI pads.
+*Motivation:* The entry-level Roland TD1 KV drumsets fake a ride bell zone when hitting the ride tip with a certain velocity. This information is not passed via MIDI OUT and this plugin will re-create the behaviour before the messages enter your drum VST. But you can use it in general to add different sounds for accents to your MIDI pads.
 
 Default Settings:
 ```
