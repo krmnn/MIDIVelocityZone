@@ -25,7 +25,7 @@ VelocityZoneAudioProcessor::VelocityZoneAudioProcessor()
     // defaults to MIDI Note 51 / D#2 == Roland TD Ride Bow Tip
     addParameter (noteInNumber = new juce::AudioParameterInt ("noteIn", "Note # In", 0, 255, 51));
     // defaults to 127, determined by experiment
-    addParameter (noteVelocityThreshold = new juce::AudioParameterInt("noteVelocityThreshold", "Velocity Threshold", 0, 255, 70));
+    addParameter (noteVelocityThreshold = new juce::AudioParameterInt("noteVelocityThreshold", "Velocity Threshold", 0, 127, 70));
     // defaults to MIDI Note 53 / F2 == Roland TD Ride Bell
     addParameter (noteOutNumber = new juce::AudioParameterInt("noteOut", "Note # Out", 0, 255, 53));
 }
