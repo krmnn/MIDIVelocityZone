@@ -19,9 +19,10 @@ Tested on MacOS with Bitwig and AudioPluginHost.
 
 
 # MacOS
-The MacOS binaries are useless because of Apple CodeSigning Tralala.
+The MacOS binaries of the plugin formats are useless because of Apple CodeSigning Tralala. 
+The Standalone App can still be executed with Control+RightClick->"Open". You can then connect the virtual MIDI instrument via "Audio MIDI Setup.app" to the plugin and your DAW.
 
-Compile it yourself, signed for your machine:
+If you still want the plugin, compile it yourself. It will be signed for your machine, and your machine only:
 ```
 brew install cmake
 cd MIDIVelocityZone
