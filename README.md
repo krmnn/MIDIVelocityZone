@@ -1,6 +1,6 @@
 # VelocityZone MIDI Plugin (JUCE)
 
-Filters incoming MIDI for a specific note and triggers a different one if the note velocity is above a configurable threshold.
+Filters incoming MIDI messages for a specific note and triggers a different one if the note velocity is above a configurable threshold.
 
 ![screenshot](screenshot.png)
 
@@ -15,3 +15,4 @@ Midi In Threshold: 70
 
 Tested on MacOS with Bitwig and AudioPluginHost.
 
+_17/07/2021 Thomas Karmann_
