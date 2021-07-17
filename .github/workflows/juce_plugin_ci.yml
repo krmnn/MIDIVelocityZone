@@ -3,7 +3,15 @@
 
 name: CMake Build Matrix
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+      - develop
+    tags:
+      - v0.*.*
+  pull_request:
+
 
 env:
   CMAKE_VERSION: 3.16.2
