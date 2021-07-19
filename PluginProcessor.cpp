@@ -137,15 +137,12 @@ void VelocityZoneAudioProcessor::processBlock(juce::AudioBuffer<float> &buffer,
 
     // copy each midi note on event
     if (message.isNoteOn()) {
-      if (message.getVelocity() > *noteVelocityThreshold) {
-        // velocity zone trigged, change note val
-        message = juce::MidiMessage::noteOn(
-            message.getChannel(), *noteOutNumber, message.getVelocity());
-      } else {
-        // just copy note
-        // message = juce::MidiMessage::noteOn (message.getChannel(),
-        //                                     message.getNoteNumber(),
-        //                                     message.getVelocity());
+      if (message.getNoteNumber() == *noteInNumber) {
+        if (message.getVelocity() > *noteVelocityThreshold) {
+          // velocity zone trigged, change note val
+          message = juce::MidiMessage::noteOn(
+              message.getChannel(), *noteOutNumber, message.getVelocity());
+        }
       }
 
       // to new buffer
