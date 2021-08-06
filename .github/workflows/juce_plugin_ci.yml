@@ -5,8 +5,10 @@ name: CMake Build Matrix
 
 on:
   push:
+    branches:
+      - "*"
     tags:
-      - v0.*.*
+      - "v0.*.*"
   pull_request:
 
 env:
