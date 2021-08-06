@@ -20,6 +20,15 @@ Midi In Threshold: 70
 Tested on MacOS with Bitwig and AudioPluginHost.
 
 
+
+
+
+# Compile
+
+```
+git submodule update --init --recursive
+```
+
 # MacOS
 The MacOS binaries of the plugin formats are useless because of Apple CodeSigning Tralala. 
 

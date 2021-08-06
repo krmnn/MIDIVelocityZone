@@ -1,0 +1,3 @@
+[submodule "Ext/JBPluginBase"]
+	path = Ext/JBPluginBase
+	url = git@github.com:JanosGit/PluginBase.git
