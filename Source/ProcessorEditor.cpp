@@ -157,11 +157,11 @@ ProcessorEditor::ProcessorEditor (VelocityZoneAudioProcessor& proc)
 //pedal            (proc, *this),
 isInMessageState (false),
 messageOkButton ("OK"),
-messageLearnMoreButton ("Learn more"),
-//knobDrawable     (juce::Drawable::createFromImageData (BinaryData::knob_svg, BinaryData::knob_svgSize)),
-ojdLookAndFeel   (*knobDrawable)
+messageLearnMoreButton ("Learn more")
+//knobDrawable     (juce::Drawable::createFromImageData (juce::BinaryData::knob_svg, BinaryData::knob_svgSize)),
+//ojdLookAndFeel   (*knobDrawable)
 {
-    setLookAndFeel (&ojdLookAndFeel);
+    //setLookAndFeel (&ojdLookAndFeel);
     
     //addAndMakeVisible (background);
     //addAndMakeVisible (pedal);

@@ -134,9 +134,9 @@ private:
     juce::TextButton messageOkButton;
     juce::TextButton messageLearnMoreButton;
     
-    const std::unique_ptr<juce::Drawable> knobDrawable;
+    //const std::unique_ptr<juce::Drawable> knobDrawable;
     
-    OJDLookAndFeel ojdLookAndFeel;
+    //OJDLookAndFeel ojdLookAndFeel;
     
     std::unique_ptr<jb::PresetManagerComponent> presetManagerComponent;
     
