@@ -132,7 +132,7 @@ void VelocityZoneAudioProcessor::processBlock(juce::dsp::AudioBlock<float> &buff
     juce::MidiBuffer processedMidi;
     
     // the audio buffer in a midi effect will have zero channels!
-    jassert(buffer.getNumChannels() == 0);
+    //jassert(buffer.getNumChannels() == 0);
     
     for (const auto metadata : midiBuffer) {
         auto message = metadata.getMessage();
