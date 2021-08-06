@@ -77,7 +77,7 @@ juce_add_plugin(AudioPluginExample
 # that will be built into the target. This is a standard CMake command.
 
 target_sources(AudioPluginExample PRIVATE
-    PluginProcessor.cpp)
+    Source/PluginProcessor.cpp)
 
 # `target_compile_definitions` adds some preprocessor definitions to our target. In a Projucer
 # project, these might be passed in the 'Preprocessor Definitions' field. JUCE modules also make use
