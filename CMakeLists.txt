@@ -52,7 +52,7 @@ juce_add_plugin(AudioPluginExample
     # ICON_BIG ...                              # ICON_* arguments specify a path to an image file to use as an icon for the Standalone
     # ICON_SMALL ...
     COMPANY_NAME krmnn                          # Specify the name of the plugin's author
-    # IS_SYNTH TRUE/FALSE                       # Is this a synth or an effect?
+    IS_SYNTH FALSE                       # Is this a synth or an effect?
     NEEDS_MIDI_INPUT TRUE                       # Does the plugin need midi input?
     NEEDS_MIDI_OUTPUT TRUE                      # Does the plugin need midi output?
     IS_MIDI_EFFECT TRUE                         # Is this plugin a MIDI effect?
@@ -69,7 +69,7 @@ juce_add_plugin(AudioPluginExample
 # include all your JUCE module headers; if you're happy to include module headers directly, you
 # probably don't need to call this.
 
-# juce_generate_juce_header(AudioPluginExample)
+#juce_generate_juce_header(AudioPluginExample)
 
 # `target_sources` adds source files to a target. We pass the target that needs the sources as the
 # first argument, then a visibility parameter for the sources (PRIVATE is normally best practice,
@@ -77,7 +77,10 @@ juce_add_plugin(AudioPluginExample
 # that will be built into the target. This is a standard CMake command.
 
 target_sources(AudioPluginExample PRIVATE
-    Source/PluginProcessor.cpp)
+    Source/PluginProcessor.cpp
+    Source/ProcessorEditor.cpp
+    Source/OJDParameters.cpp
+    )
 
 # `target_compile_definitions` adds some preprocessor definitions to our target. In a Projucer
 # project, these might be passed in the 'Preprocessor Definitions' field. JUCE modules also make use
@@ -107,7 +110,11 @@ target_compile_definitions(AudioPluginExample
 # dependencies are resolved automatically, so `juce_core`, `juce_events` and so on will also be
 # linked automatically. If we'd generated a binary data target above, we would need to link to it
 # here too. This is a standard CMake command.
+#
+juce_add_module(Ext/JBPluginBase/jb_plugin_base)
 
 target_link_libraries(AudioPluginExample PRIVATE
     # AudioPluginData           # If we'd created a binary data target, we'd link to it here
-    juce::juce_audio_utils)
+    juce::juce_audio_utils
+    jb_plugin_base
+    )
