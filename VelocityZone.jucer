@@ -7,10 +7,19 @@
   <MAINGROUP id="XuXsBl" name="MIDIVelocityZone">
     <GROUP id="{CE611F31-2F49-AA3F-2942-2F0CABD27C3C}" name="Source">
       <GROUP id="{5CE09B05-8CBE-0DB5-3DBB-3B9A9E3F461F}" name="Source">
+        <FILE id="LGppxl" name="OJDLookAndFeel.h" compile="0" resource="0"
+              file="Source/OJDLookAndFeel.h"/>
+        <FILE id="iRttSi" name="OJDParameters.cpp" compile="1" resource="0"
+              file="Source/OJDParameters.cpp"/>
+        <FILE id="YEjp2y" name="OJDParameters.h" compile="0" resource="0" file="Source/OJDParameters.h"/>
         <FILE id="O34oNL" name="PluginProcessor.cpp" compile="1" resource="0"
               file="Source/PluginProcessor.cpp"/>
         <FILE id="YF6cxG" name="PluginProcessor.h" compile="0" resource="0"
               file="Source/PluginProcessor.h"/>
+        <FILE id="TYrnu7" name="ProcessorEditor.cpp" compile="1" resource="0"
+              file="Source/ProcessorEditor.cpp"/>
+        <FILE id="TH0o7X" name="ProcessorEditor.h" compile="0" resource="0"
+              file="Source/ProcessorEditor.h"/>
       </GROUP>
     </GROUP>
   </MAINGROUP>
