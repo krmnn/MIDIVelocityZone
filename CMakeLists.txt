@@ -69,7 +69,8 @@ juce_add_plugin(AudioPluginExample
 # include all your JUCE module headers; if you're happy to include module headers directly, you
 # probably don't need to call this.
 
-#juce_generate_juce_header(AudioPluginExample)
+juce_generate_juce_header(AudioPluginExample
+    jb::jb_plugin_base)
 
 # `target_sources` adds source files to a target. We pass the target that needs the sources as the
 # first argument, then a visibility parameter for the sources (PRIVATE is normally best practice,
@@ -111,10 +112,10 @@ target_compile_definitions(AudioPluginExample
 # linked automatically. If we'd generated a binary data target above, we would need to link to it
 # here too. This is a standard CMake command.
 #
-juce_add_module(Ext/JBPluginBase/jb_plugin_base)
+juce_add_module(Ext/JBPluginBase/jb_plugin_base ALIAS_NAMESPACE jb)
 
 target_link_libraries(AudioPluginExample PRIVATE
     # AudioPluginData           # If we'd created a binary data target, we'd link to it here
     juce::juce_audio_utils
-    jb_plugin_base
+    jb::jb_plugin_base
     )
