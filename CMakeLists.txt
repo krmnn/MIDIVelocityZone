@@ -5,9 +5,8 @@ cmake_minimum_required(VERSION 3.4)
 project("MIDIVelocityZone")
 
 
-list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/../../FRUT/prefix/FRUT/cmake")
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/../../FRUT/cmake")
 include(Reprojucer)
-
 
 set(VelocityZone_jucer_FILE
   "${CMAKE_CURRENT_LIST_DIR}/VelocityZone.jucer"
