@@ -140,7 +140,7 @@ jobs:
             -S Ext/FRUT
             -B build/FRUT
             -D CMAKE_INSTALL_PREFIX="build/FRUT"
-            -D JUCE_ROOT="Ext/JUCE")
+            -D JUCE_ROOT="Ext/JUCE"
           RESULT_VARIABLE result
         )
         if (NOT result EQUAL 0)
