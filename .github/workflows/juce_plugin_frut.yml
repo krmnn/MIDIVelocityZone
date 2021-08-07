@@ -92,6 +92,13 @@ jobs:
           )
         endif()
 
+    - name: Build FRUT
+      id: frut
+      shell: cmake -P {0}
+      run: |
+        execute_process(COMMAND ${CMAKE_COMMAND} ./Ext/FRUT -DCMAKE_INSTALL_PREFIX="./" -DJUCE_ROOT="./Ext/JUCE")
+        execute_process(COMMAND ${CMAKE_COMMAND} --build ./Ext/FRUT --target install)
+
     - name: Download ccache
       id: ccache
       shell: cmake -P {0}
