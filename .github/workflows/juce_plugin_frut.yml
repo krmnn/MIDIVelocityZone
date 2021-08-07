@@ -6,7 +6,7 @@ name: CMake Build Matrix
 on:
   push:
     branches:
-      - "main"
+      - "jb_plugin_base"
     tags:
       - "v0.*.*"
   pull_request:
