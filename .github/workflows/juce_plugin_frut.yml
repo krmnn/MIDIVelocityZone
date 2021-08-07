@@ -139,8 +139,8 @@ jobs:
           COMMAND ${{ steps.cmake_and_ninja.outputs.cmake_dir }}/cmake
             -S Ext/FRUT
             -B build/FRUT
-            -D CMAKE_INSTALL_PREFIX=build/FRUT
-            -D JUCE_ROOT=Ext/JUCE
+            -D CMAKE_INSTALL_PREFIX=.
+            -D JUCE_ROOT=../../Ext/JUCE
           RESULT_VARIABLE result
         )
         if (NOT result EQUAL 0)
