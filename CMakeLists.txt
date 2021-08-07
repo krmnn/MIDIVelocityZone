@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.4)
 project("MIDIVelocityZone")
 
 
-list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/../../FRUT/cmake")
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/FRUT/cmake")
 include(Reprojucer)
 
 set(VelocityZone_jucer_FILE
@@ -13,7 +13,7 @@ set(VelocityZone_jucer_FILE
 )
 
 
-set(JUCE_MODULES_GLOBAL_PATH "/Applications/JUCE/modules")
+set(JUCE_MODULES_GLOBAL_PATH "Ext/JUCE/modules")
 
 
 jucer_project_begin(
@@ -167,6 +167,7 @@ jucer_project_module(
   PATH "${JUCE_MODULES_GLOBAL_PATH}"
   # JUCE_EXECUTE_APP_SUSPEND_ON_BACKGROUND_TASK
 )
+F
 
 jucer_project_module(
   juce_graphics
